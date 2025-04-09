@@ -3,7 +3,7 @@ package com.ecommerce.products;
 import com.ecommerce.interfaces.Expirable;
 import com.ecommerce.interfaces.Shippable;
 
-public class TV extends Product implements Expirable, Shippable {
+public class TV extends Product implements Expirable , Shippable {
 
     private double weight;
 

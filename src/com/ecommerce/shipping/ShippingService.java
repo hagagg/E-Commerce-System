@@ -22,7 +22,7 @@ public class ShippingService {
             System.out.print(item.getQuantity() + "x " + product.getName() );
             System.out.print("  :  ");
             System.out.println(item.getQuantity() *  ((Shippable) product).getWeight() + "g");
-            totalWeight += ((Shippable) product).getWeight();
+            totalWeight += ((Shippable) product).getWeight() * item.getQuantity();
             }
         }
         System.out.println("Total Package Weight: " + totalWeight /1000 + "kg");
